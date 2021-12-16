@@ -29,6 +29,7 @@ export const RegisterForm: React.FC<Entry<RegistrationFormFields>> = ({ fields }
             <form>
               {registered ? (
                 <p>{fields.registeredText}</p>
+                <iframe src={fields.registeredText} />
               ) : (
                 <button
                   type="button"
